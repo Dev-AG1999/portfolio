@@ -1,0 +1,41 @@
+.contacts{
+    height: 100vh;
+    background-color: rgb(37, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.contact_wrapper{
+    width: 60%;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+
+
+}
+.contact_details{
+    padding: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.address,.mail,.linkedin,.number{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.links{
+ word-break: break-all;
+ word-wrap: break-word;
+}
+
+@media screen and (max-width:580px){
+    .contact_details{
+        font-size: 12px;
+    }
+    .contact_wrapper{
+        width: 90%;
+    }
+}

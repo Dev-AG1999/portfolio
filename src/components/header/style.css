@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.header_wrapper {
+  padding: 10px;
+  background: #e91e63;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+  z-index: 999;
+  top: 0;
+}
+
+.name {
+  margin: 0;
+  color: white;
+  font-family: cursive;
+}
+@media screen and (max-width:460px){
+  .name{
+    font-size: 15px;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  list-style: none;
+}
+
+.nav > li> a>button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+}
+@media screen and (max-width:460px){
+  .nav{
+ display: none;
+  }
+}
+.hamburger_button{
+  border: none;
+  background: transparent;
+  display: none;
+}
+@media screen and (max-width:460px){
+  .hamburger_button{
+ display: block;
+  }
+}
+.hamburger_menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  width: 20px;
+  list-style: none;
+  height: 15px;
+
+
+}
+.hamburger_menu > li{
+  background:#ffff;
+  height: 1px;
+  width: 100%;
+}
+.modal_nav{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+height: 50%;
+width: 100%;
+  list-style: none;
+  color:#e91e63 ;
+  font-weight: bold;
+}
+.modal_nav > li> a>button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.modal_nav > li> a>button:hover{
+  color: #e91e63;
+  transition: all 0.3s ease-in-out;
+}
+.open_menu{
+  height:100vh;
+  width: 100%;
+  background: rgb(37, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.close_menu{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.close_menu>button{
+  transform: rotate(45deg);
+  font-size: 50px;
+  color:#e91e63 ;
+  background-color: transparent;
+  border: none;
+}
+.background-white{
+  background-color: white;
+}
