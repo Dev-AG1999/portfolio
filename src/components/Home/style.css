@@ -69,3 +69,20 @@
     flex-wrap: wrap;
     margin-top: 20px;
 }
+.button_container{
+    margin: 20px 0;
+}
+.download{
+    background-color: #e91e63;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+transition: all 0.3s ease-in-out;
+}
+:hover.download{
+   transform: translateY(-5px);
+   transition: all 0.3s ease-in-out;
+        background-image: linear-gradient(to right,  #e91e63 40%, #f6d365 100%);
+      
+}

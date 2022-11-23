@@ -44,7 +44,7 @@ export const Header = ({ name }) => {
   };
   const closeMenu = (e) => {
     e.preventDefault();
-    history('/home')
+    history('/')
     setOpen(false);
   
   };
@@ -52,14 +52,14 @@ export const Header = ({ name }) => {
   return (
 <div className="header_wrapper">
       <div className="header_name">
-       <a href='/layout'> <h3 className="name">{name}</h3></a>
+       <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aishwariya-ghosal-25a597184"> <h3 className="name">{name}</h3></a>
       </div>
 
       <ul className="nav">
-        <li> <a href="./home"><button  onClick={()=>handleClick()}>Home</button></a></li>
-        <li> <a href="./abouts"><button onClick={()=>handleClickAbouts()}>Abouts</button></a></li>
-        <li><a href="./projects"><button onClick={()=>handleClickProject()}>Projects</button></a></li>
-        <li> <a href="./contact"><button onClick={()=>handleClickContact()}>Contact</button></a></li>
+        <li> <a><button  onClick={()=>handleClick()}>Home</button></a></li>
+        <li> <a><button onClick={()=>handleClickAbouts()}>Abouts</button></a></li>
+        <li><a><button onClick={()=>handleClickProject()}>Projects</button></a></li>
+        <li> <a><button onClick={()=>handleClickContact()}>Contact</button></a></li>
       </ul>
       <button className="hamburger_button" onClick={clickMenu}>
         <Modal open={open} onClose={() => setOpen(false)}>
@@ -68,10 +68,10 @@ export const Header = ({ name }) => {
           <button onClick={closeMenu}>+</button>  
             </div>
             <ul className="modal_nav">
-            <li> <a href="./home"><button onClick={()=>handleClick()}>Home</button></a></li>
-            <li> <a href="./abouts"><button onClick={()=>handleClickAbouts()}>Abouts</button></a></li>
-        <li><a href="./projects"><button onClick={()=>handleClickProject()}>Projects</button></a></li>
-        <li> <a href="./contact"><button onClick={()=>handleClickContact()}>Contact</button></a></li>
+            <li> <a><button onClick={()=>handleClick()}>Home</button></a></li>
+            <li> <a><button onClick={()=>handleClickAbouts()}>Abouts</button></a></li>
+        <li><a><button onClick={()=>handleClickProject()}>Projects</button></a></li>
+        <li> <a><button onClick={()=>handleClickContact()}>Contact</button></a></li>
  
         
             </ul>

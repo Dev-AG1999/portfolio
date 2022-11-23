@@ -1,8 +1,24 @@
 import "../Home/style.css";
 import profilePhoto from "../../Assets/profile-photo.JPG";
+import resume from "../../Assets/Aishwariya-new-cv.pdf";
 import { Header } from "../header";
 
 export const Home = ({ name }) => {
+  
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch(resume).then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = resume;
+            alink.click();
+        })
+    })
+}
   return (
     <>
               <Header name="AISHWARIYA GHOSAL" />
@@ -55,9 +71,9 @@ export const Home = ({ name }) => {
               </h3>
             </div>
           </div>
-          </div>
+          <div className="button_container"><button className="download" onClick={onButtonClick}>Download My Resume</button></div>   </div>
   
-        
+       
          
         </div>
       </div>
