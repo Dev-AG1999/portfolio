@@ -1,7 +1,7 @@
 
 *{
     color: white;
-    font-family: cursive;
+    font-family:'Times New Roman', Times, serif;
 }
 .home{
     display: flex;
@@ -79,6 +79,7 @@
     cursor: pointer;
     letter-spacing: 1px;
 transition: all 0.3s ease-in-out;
+border: none;
 }
 :hover.download{
    transform: translateY(-5px);

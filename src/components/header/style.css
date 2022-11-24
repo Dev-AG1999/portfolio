@@ -24,11 +24,14 @@ a {
 .name {
   margin: 0;
   color: white;
-  font-family: cursive;
+ 
 }
 @media screen and (max-width:460px){
   .name{
     font-size: 15px;
+  }
+  .header_wrapper{
+    padding: 10px 0;
   }
 }
 .nav {
@@ -42,7 +45,7 @@ a {
   background-color: transparent;
   border: none;
   color: white;
-  font-family: cursive;
+ 
   cursor: pointer;
 }
 @media screen and (max-width:460px){
@@ -89,7 +92,7 @@ width: 100%;
   background-color: transparent;
   border: none;
   color: white;
-  font-family: cursive;
+ 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

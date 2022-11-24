@@ -8,7 +8,7 @@
 }
 .projects {
   background: rgb(37, 34, 34);
-  height: 150vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
 }

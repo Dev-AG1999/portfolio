@@ -1,6 +1,7 @@
 
 import {Header} from "../header";
 import "./style.css"
+import workimage from "../../Assets/work-image.gif"
 
 
 export const Abouts = () => {
@@ -8,6 +9,10 @@ export const Abouts = () => {
 
       <div className="exp_container">
          <Header  name="AISHWARIYA GHOSAL"/>
+<div className="image-container">
+<h1>ABOUTS</h1>
+  <img alt="" src={workimage}/>
+</div>
         <div className="experience">
       
             <h1 style={{ color: "white",

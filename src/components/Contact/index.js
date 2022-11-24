@@ -5,12 +5,16 @@ import HomeIcon from '@mui/icons-material/Home';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import hi5 from "../../Assets/hi5.gif"
 
 export const Contact = () => {
   return (
 <>      <Header  name="AISHWARIYA GHOSAL"/>
 <div className="contacts" >
-  
+<div className="image-container">
+          <h1>CONTACTS</h1>
+          <img alt="" src={hi5}/>
+         </div>
 <div className="contact_wrapper">
     
 <h1>Contact</h1>

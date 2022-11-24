@@ -8,7 +8,7 @@ import ikken from "../../Assets/ikken.png";
 import todo from "../../Assets/todo.png";
 import form from "../../Assets/form.png";
 import "../Projects/style.css"
-
+import bagPencil from "../../Assets/briefcase.gif"
 import {Card} from "../cards"
 
 export const Projects = () => {
@@ -16,14 +16,19 @@ export const Projects = () => {
     
       <div className="projects">
         <Header  name="AISHWARIYA GHOSAL"/>
+        <div className="image-container">
+          <h1>PROJECTS</h1>
+          <img alt="" src={bagPencil}/>
+         </div>
         <div className="project_wrapper" style={{display:"flex",height:"100%",width:"80%",margin:"auto",padding:"50px 0 0 0",flexDirection:"column"
       }}>
          <div className="Heading">
-         <h1 style={{color:"white",marginTop:"20px",fontFamily:"cursive"}}>Projects</h1>
+         <h1 style={{color:"white",marginTop:"20px"}}>Projects</h1>
          <div className="underline"></div>
          </div>
+       
          <div className="project_info">
-          <span style={{color:"#968b8b",fontFamily:"cursive"}}>Please go to the following links to view all my projects in Github</span>
+          <span style={{color:"#968b8b"}}>Please go to the following links to view all my projects in Github</span>
           <div className="project_container" style={{    display: "flex",justifyContent:"center",
     flexWrap: "wrap", margin:"20px 0"}}>
       <Card  source="https://github.com/Dev-AG1999/instagram-clone" link="https://instagram-clonify.netlify.app/" image={instagramClone}/>
